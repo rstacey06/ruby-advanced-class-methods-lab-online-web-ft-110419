@@ -12,7 +12,11 @@ class Song
   end
   
   def self.create 
+<<<<<<< HEAD
     song = Song.new 
+=======
+    song = song.new 
+>>>>>>> 72e906f2f375de5e3792893cba7567917ab8888a
     song.save 
     song
   end
@@ -42,6 +46,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
+<<<<<<< HEAD
     
     newname = filename.split(" - ")
     artist_name = newname[0]
@@ -59,6 +64,16 @@ class Song
   
   def self.create_from_filename(filename)
     self.new_from_filename(filename).save
+=======
+    binding.pry
+    newname = filename.split(" - ")
+    artist_name = newnam
+  end
+  
+  def self.create_from_filename(filename)
+    #split? same meth as new_from_filename only 
+    #self.create?
+>>>>>>> 72e906f2f375de5e3792893cba7567917ab8888a
   end
   
   def self.destroy_all 
